@@ -1,6 +1,9 @@
 library(rEDM)
 
 data(sardine_anchovy_sst)
+
+write.csv(sardine_anchovy_sst, "sardine_anchovy_sst.csv")
+
 anchovy_xmap_sst <- ccm(sardine_anchovy_sst, E = 3, lib_column = "anchovy", 
                         target_column = "np_sst", lib_sizes = seq(10, 80, by = 10), random_libs = FALSE)
 sst_xmap_anchovy <- ccm(sardine_anchovy_sst, E = 3, lib_column = "np_sst", target_column = "anchovy", 
