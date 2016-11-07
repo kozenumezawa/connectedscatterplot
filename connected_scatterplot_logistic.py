@@ -6,7 +6,7 @@ import csv
 from mpl_toolkits.mplot3d import Axes3D
 mpl.rcParams['legend.fontsize'] = 10
 
-f = open('./csv/logistic_0_9.csv', 'r')
+f = open('./csv/logistic_0_0.csv', 'r')
 reader = csv.reader(f)
 time = []
 x = []
